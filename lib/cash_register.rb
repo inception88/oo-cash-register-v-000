@@ -7,7 +7,7 @@ class CashRegister
   end
   
   def add_item(item, cost, quantity=1)
-    @total += cost.mult(quantity)
+    @total += (cost*quantity)
   end
   
 end
