@@ -13,9 +13,9 @@ class CashRegister
     item
     @item << item
     if quantity > 1
-      i += 1
-      while i < quantity
+      while i > quantity
       @item << item
+      i += 1
     end
   end
   
