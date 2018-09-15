@@ -12,7 +12,6 @@ class CashRegister
   end
   
   def apply_discount
-    discount_cost = @total*(@discount*0.01)
-    discount_cost
+    @total = @total*(@discount*0.01)
   end
 end
