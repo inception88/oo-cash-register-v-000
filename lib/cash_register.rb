@@ -9,7 +9,9 @@ class CashRegister
   
   def add_item(item, cost, quantity=1)
     @total += (cost*quantity)
+    item.each_with_index do |item, quantity|
     @items << item
+    end
   end
   
   def apply_discount
