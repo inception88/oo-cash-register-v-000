@@ -17,7 +17,7 @@ class CashRegister
     if discount ==! 0 message = "After the discount, the total comes to $#{@total.to_i}."
     else
     message = "There is no discount to apply."
-    
+    end
   end
   
   def 
