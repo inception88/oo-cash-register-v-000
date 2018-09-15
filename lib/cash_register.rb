@@ -5,7 +5,6 @@ class CashRegister
     @total = 0
     @discount = discount
     @items = [] 
-    @items << item
   end
   
   def add_item(item, cost, quantity=1)
