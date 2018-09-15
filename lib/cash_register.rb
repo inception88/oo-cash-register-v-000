@@ -9,8 +9,9 @@ class CashRegister
   
   def add_item(item, cost, quantity=1)
     @total += (cost*quantity)
-    item.each_with_index do |item, quantity|
-    @items << item
+    item
+    @item << item
+    if quantity >1
     end
   end
   
